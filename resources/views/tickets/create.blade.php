@@ -24,11 +24,11 @@
 
                   @if ($errors->has('title'))
                     <span class="help-block">
-                      <strong>{{ $error->first('title') }}</strong>
+                      <strong>{{ $errors->first('title') }}</strong>
                     </span>
                   @endif
                 </div>
-                
+
                 <div>
 
                   <div class="form-group{{ $error->has('category') ? 'has-error' : ''}}">
