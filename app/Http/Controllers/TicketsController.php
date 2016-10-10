@@ -6,7 +6,6 @@ use App\User;
 use App\Ticket;
 use App\Category;
 use App\Http\Requests;
-use App\Mailers\AppMailer;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -19,7 +18,7 @@ class TicketsController extends Controller
       return view('tickets.create', compact('categories'));
     }
 
-    public function store(Request $request, AppMailer $mailer)
+    public function store(Request $request)
     {
       $this->validate($request, [
         'title'       => 'required',
