@@ -28,6 +28,7 @@
                     </span>
                   @endif
                 </div>
+                
                 <div>
 
                   <div class="form-group{{ $error->has('category') ? 'has-error' : ''}}">
@@ -47,7 +48,7 @@
                           </span>
                         @endif
                       </div>
-                    </div>
+                  </div>
 
                     <div class="form-group{{ $errors->has('priority') ? 'has-error' : ''}}">
                       <label for="priority" class="col-md-4 control-label">Priority</label>
@@ -95,4 +96,4 @@
                 </div>
               </div>
             </div>
-          </div>  
+          </div>
