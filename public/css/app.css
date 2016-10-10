@@ -7,3 +7,8 @@
  body {
    background-color: purple;
  }
+
+ form {
+   background-color: pink;
+   color: white;
+ }
