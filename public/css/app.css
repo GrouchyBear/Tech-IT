@@ -8,7 +8,7 @@
    background-color: purple;
  }
 
- form {
-   background-color: pink;
+ .panel {
+   background-color: pink !important;
    color: white;
  }
