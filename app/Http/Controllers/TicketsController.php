@@ -2,14 +2,12 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
-
-use App\Http\Requests;
-
+use App\User;
+use App\Ticket;
 use App\Category;
-
-use App/Ticket;
-use App/Mailers/AppMailer;
+use App\Http\Requests;
+use App\Mailers\AppMailer;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
 class TicketsController extends Controller
