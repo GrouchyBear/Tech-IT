@@ -1,5 +1,3 @@
-// create.blade.php file
-
 @extends('layouts.app')
 
 @section('title', 'Open Ticket')
