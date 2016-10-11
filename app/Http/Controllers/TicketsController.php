@@ -32,7 +32,8 @@ class TicketsController extends Controller
         'user_id'     => Auth::user()->id,
         'ticket_id'   => strtoupper(str_random(10)),
         'category_id' => $request->input('category'),
-        'priority'    => $request->input('message'),
+        'priority'    => $request->input('priority'),
+        'message'     => $request->input('message'),
         'status'      => "Open",
       ]);
 
