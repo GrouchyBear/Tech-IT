@@ -17,7 +17,7 @@ class CreateTicketsTable extends Migration
           $table->increments('id');
           $table->integer('user_id')->unsigned();
           $table->integer('category_id')->unsigned();
-          $table->uuid('ticket_id')->unique();
+          $table->string('ticket_id')->unique();
           $table->string('title');
           $table->string('priority');
           $table->text('message');
