@@ -20,7 +20,7 @@ class CreateTicketsTable extends Migration
           $table->string('ticket_id')->unique();
           $table->string('title');
           $table->string('priority');
-          $table->text('message');
+          $table->text('message')->default();
           $table->string('status');
           $table->timestamps();
         });
