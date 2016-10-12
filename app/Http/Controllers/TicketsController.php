@@ -48,4 +48,13 @@ class TicketsController extends Controller
        $categories = Category::all();
        return view('tickets.user_tickets', compact('tickets', 'categories'));
    }
+
+   public function show($ticket_id)
+   {
+     $ticket = Ticket::where('ticket_id', $ticket_id)->firstorFail();
+
+     $category = $ticket->category;
+
+     return view('ticket.show', compact('ticket', 'category'));
+   }
 }
