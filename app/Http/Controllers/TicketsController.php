@@ -55,6 +55,6 @@ class TicketsController extends Controller
 
      $category = $ticket->category;
 
-     return view('ticket.show', compact('ticket', 'category'));
+     return view('tickets.show', compact('ticket', 'category'));
    }
 }
