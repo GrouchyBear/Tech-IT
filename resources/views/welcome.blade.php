@@ -13,8 +13,8 @@
         <!-- Styles -->
         <style>
             html, body {
-                background-color: #fff;
-                color: #636b6f;
+                background-color: #2c3e50;
+                color: #ecf0f1;
                 font-family: 'Raleway', sans-serif;
                 font-weight: 100;
                 height: 100vh;
