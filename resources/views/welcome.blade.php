@@ -65,7 +65,7 @@
 
             .links > a:hover, .links > a:focus {
               color:#8e44ad;
-              transition: color 1.2s;
+              transition: color 0.8s;
             }
         </style>
     </head>
