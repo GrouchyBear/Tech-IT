@@ -24,7 +24,8 @@ class CommentsController extends Controller
           'comment'     => $request->input('comment'),
         ]);
 
+        return redirect()->back()->with("status", "Your comment has be submitted.");
+
     }
 
-    return redirect()->back()->with("status", "Your comment has been submitted.");
 }
