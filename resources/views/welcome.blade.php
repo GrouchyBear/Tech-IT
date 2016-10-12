@@ -62,6 +62,10 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
+
+            .a:hover {
+              color:#8e44ad;
+            }
         </style>
     </head>
     <body>
@@ -79,7 +83,7 @@
                 </div>
 
                 <div class="links">
-                    <a href="http://www.bcot.ac.uk">Basingstoke College of Technology</a>
+                    <a href="http://www.bcot.ac.uk">BCoT</a>
                     <a href="https://github.com/GrouchyBear/Tech-IT/wiki">Documentation</a>
                     <a href="https://github.com/GrouchyBear/Tech-IT/issues">Issues</a>
                     <a href="https://github.com/GrouchyBear/Tech-IT">GitHub</a>
