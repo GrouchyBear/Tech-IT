@@ -63,8 +63,9 @@
                 margin-bottom: 30px;
             }
 
-            .a:hover {
+            .links > a:hover, .links > a:focus {
               color:#8e44ad;
+              transition: color 1.2s;
             }
         </style>
     </head>
