@@ -31,4 +31,4 @@ Route::get('user_tickets', 'TicketsController@userTickets');
 
 // Show detailed view of ticket & post comments//
 Route::get('tickets/{ticket_id}', 'TicketsController@show');
-Route::post('comment', 'TicketsController@postComment');
+Route::post('comment', 'CommentsController@postComment');
