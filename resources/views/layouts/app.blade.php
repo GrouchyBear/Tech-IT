@@ -57,9 +57,9 @@
 
                         @else
 
-                            <li><i class="fa fa-admin"></i><a href="{{ url('admin/tickets') }}">tickets</a></li>
+                            <li><i class="fa fa-admin"></i><a href="{{ url('admin/tickets') }}">Admin</a></li>
                             <li><a href="{{ url('new_ticket') }}">Submit</a></li>
-                            <li><a href="{{ url('user_tickets') }}">Open Tickets</a></li>
+                            <li><a href="{{ url('user_tickets') }}">Tickets</a></li>
 
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
