@@ -55,11 +55,9 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
 
-                        @elseif (Middleware::admin())
-
-                            <li><a href="{{ url('admin/tickets') }}">tickets</a></li>
-
                         @else
+
+                            <li><i class="fa fa-admin"><a href="{{ url('admin/tickets') }}">tickets</a></li>
                             <li><a href="{{ url('new_ticket') }}">Submit</a></li>
                             <li><a href="{{ url('user_tickets') }}">Open Tickets</a></li>
 
