@@ -32,3 +32,9 @@ Route::get('user_tickets', 'TicketsController@userTickets');
 // Show detailed view of ticket & post comments//
 Route::get('tickets/{ticket_id}', 'TicketsController@show');
 Route::post('comment', 'CommentsController@postComment');
+
+// Admin middleware routes //
+Route::group(['prefix' => 'admin', 'middleware' => 'admin'], function(){
+  Route::get('tickets', 'TicketsController@index');
+  Route::post('close_ticket/{ticket_id}', 'TicketsController@close');
+});

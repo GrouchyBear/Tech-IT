@@ -60,4 +60,30 @@ class TicketsController extends Controller
      return view('tickets.show', compact('ticket', 'category', 'comments'));
    }
 
+   public function index()
+   {
+
+     $tickets = Ticket::paginate(10);
+
+     $category = Category::all();
+
+     return view('tickets.index', compact('tickets', 'categoies'));
+
+   }
+
+   public function close($ticket_id)
+   {
+
+     $ticket = Ticket::where('ticket_id', $ticket_id)->firstorFail();
+
+     $ticket->status = "Completed";
+
+     $ticket->save();
+
+     $ticketOwner = $ticket->user;
+
+     return redirect()->back()->with("status", "Task has been marked as completed by staff");
+
+   }
+
 }
