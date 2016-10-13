@@ -22,7 +22,7 @@
                                   <i class="fa fa-comments fa-5x"></i>
                                 </div>
                                 <div class="col-xs-9">
-                                  <div class="huge">{{$tickets->$id}}</div>
+                                  <div class="huge">7</div>
                                   <div>Completed tasks</div>
                                 </div>
                               </div>
