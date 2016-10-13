@@ -13,9 +13,23 @@
                     <p>You are logged in!</p>
 
                     @if (Auth::user()->is_admin)
-                        <p>
-                            See all <a href="{{ url('admin/tickets') }}">tickets</a>
-                        </p>
+                        <div class="row">
+                          <div class="col-lg-3 col-md-6">
+                            <div class="panel panel-success">
+                              <div class="panel-heading">
+                              <div class="row">
+                                <div class="col-xs-3">
+                                  <i class="fa fa-comments fa-5x"></i>
+                                </div>
+                                <div class="col-xs-9">
+                                  <div class="huge">{{$ticket->$id}}</div>
+                                  <div>Completed tasks</div>
+                                </div>
+                              </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                     @else
                         <p>
                             See all your <a href="{{ url('user_tickets') }}">tickets</a> or <a href="{{ url('new_ticket') }}">open new ticket</a>
