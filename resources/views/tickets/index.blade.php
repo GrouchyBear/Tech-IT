@@ -17,7 +17,6 @@
 		        		<table class="table">
 		        			<thead>
 		        				<tr>
-		        					<th>Category</th>
 		        					<th>Title</th>
 		        					<th>Status</th>
 		        					<th>Last Updated</th>
@@ -27,7 +26,7 @@
 		        			<tbody>
 		        			@foreach ($tickets as $ticket)
 								<tr>
-		        					
+
 		        					<td>
 		        						<a href="{{ url('tickets/'. $ticket->ticket_id) }}">
 		        							#{{ $ticket->ticket_id }} - {{ $ticket->title }}
