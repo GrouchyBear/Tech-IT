@@ -86,4 +86,11 @@ class TicketsController extends Controller
 
    }
 
+   public function __contruct()
+   {
+
+     $this->middleware('auth');
+
+   }
+
 }
