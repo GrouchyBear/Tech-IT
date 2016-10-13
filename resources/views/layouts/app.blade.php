@@ -55,9 +55,12 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
 
+                        @elseif (Auth::user()->is_admin)
+                        
+                            <li><i class="fa fa-admin"></i><a href="{{ url('admin/tickets') }}">Admin</a></li>
+
                         @else
 
-                            <li><i class="fa fa-admin"></i><a href="{{ url('admin/tickets') }}">Admin</a></li>
                             <li><a href="{{ url('new_ticket') }}">Submit</a></li>
                             <li><a href="{{ url('user_tickets') }}">Tickets</a></li>
 
