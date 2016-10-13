@@ -55,7 +55,7 @@
                             <li><a href="{{ url('/login') }}">Login</a></li>
                             <li><a href="{{ url('/register') }}">Register</a></li>
 
-                        @elseif (Auth::admin())
+                        @elseif (Middleware::admin())
 
                             <li><a href="{{ url('admin/tickets') }}">tickets</a></li>
 
