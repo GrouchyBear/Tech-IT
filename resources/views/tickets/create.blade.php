@@ -71,7 +71,7 @@
                           <label for="conctact" class="col-md-4 contronl-label">Conctact </label>
 
                           <div class="col-md-6">
-                            <input row="10" id="conctact" class="form-control" name="message"></input>
+                            <input row="10" id="conctact" class="form-control" name="contact">
 
                             @if($errors->has('contact'))
                                 <span class="help-block">
