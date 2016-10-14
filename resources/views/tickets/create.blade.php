@@ -67,6 +67,20 @@
                             </div>
                         </div>
 
+                        <div clas="form-group{{ $erros->has('conctact') ? ' has-error' : '' }}">
+                          <label for="conctact" class="col-md-4 contronl-label">Conctact </label>
+
+                          <div class="col-md-6">
+                            <input row="10" id="conctact" class="form-control" name="message"></input>
+
+                            @if($errors->has('contact'))
+                                <span class="help-block">
+                                  <strong>{{ $errors->first('conctact') }}</strong>
+                                </span>
+                            @endif
+                          </div>
+                        </div>
+
                         <div class="form-group{{ $errors->has('message') ? ' has-error' : '' }}">
                             <label for="message" class="col-md-4 control-label">Message</label>
 

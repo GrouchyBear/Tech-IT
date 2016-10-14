@@ -24,7 +24,8 @@ class TicketsController extends Controller
         'title'       => 'required',
         'category'    => 'required',
         'priority'    => 'required',
-        'message'     => 'required'
+        'message'     => 'required',
+        'contact'     => 'required'
       ]);
 
       $ticket = new Ticket([
@@ -34,6 +35,7 @@ class TicketsController extends Controller
         'category_id' => $request->input('category'),
         'priority'    => $request->input('priority'),
         'message'     => $request->input('message'),
+        'contact'     => $request->input('contact'),
         'status'      => "Open",
       ]);
 
