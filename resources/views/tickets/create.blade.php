@@ -67,7 +67,7 @@
                             </div>
                         </div>
 
-                        <div clas="form-group{{ $erros->has('conctact') ? ' has-error' : '' }}">
+                        <div clas="form-group{{ $errors->has('conctact') ? ' has-error' : '' }}">
                           <label for="conctact" class="col-md-4 contronl-label">Conctact </label>
 
                           <div class="col-md-6">
