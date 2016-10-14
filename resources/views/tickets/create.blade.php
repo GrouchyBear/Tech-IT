@@ -68,10 +68,10 @@
                         </div>
 
                         <div clas="form-group{{ $errors->has('conctact') ? ' has-error' : '' }}">
-                          <label for="conctact" class="col-md-4 contronl-label">Conctact </label>
+                          <label for="conctact" class="col-md-4 contronl-label">Conctact</label>
 
                           <div class="col-md-6">
-                            <input row="10" id="conctact" class="form-control" name="contact">
+                            <input id="contact" type="text" class="form-control" name="contact" value="{{ old('contact') }}">
 
                             @if($errors->has('contact'))
                                 <span class="help-block">
