@@ -3,7 +3,7 @@ Bootstrap: [![Latest Stable Version](https://poser.pugx.org/twbs/bootstrap/v/sta
 
 Laravel: [![Latest Stable Version](https://poser.pugx.org/laravel/laravel/v/stable)](https://packagist.org/packages/laravel/laravel)
 
-TIKET is a small project using [Laravel](https://laravel.com) as the framework, it combines features of a public tickting system and real time time management applications to create the perfect workshop scheduler. This web application was create for Basingstoke College of Technology, by Benjamin Lack to use as OOP project for assessment. 
+TIKET is a small project using [Laravel](https://laravel.com) as the framework, it combines features of a public tickting system and real time time management applications to create the perfect workshop scheduler.
 
 ## Official Documentation
 
